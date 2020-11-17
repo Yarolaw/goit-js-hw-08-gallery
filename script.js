@@ -38,8 +38,11 @@ const ulEventTarget = (event) => {
     
     setlargeImgURL(imageSource)
     modalWindowRef.classList.add('is-open')
+
+    console.log(funcImageRef);
 }
-const setlargeImgURL = (url) => {
+
+function setlargeImgURL (url)  {
     bigImgRef.setAttribute("src", url)
 }
 
