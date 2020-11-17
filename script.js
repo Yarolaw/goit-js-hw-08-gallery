@@ -34,12 +34,11 @@ const ulEventTarget = (event) => {
         return
     }
     const funcImageRef = event.target
-    const imageSource = funcImageRef.dataset.source
+    const imageSource = funcImageRef.dataset.sourse
     
     setlargeImgURL(imageSource)
     modalWindowRef.classList.add('is-open')
 
-    console.log(funcImageRef);
 }
 
 function setlargeImgURL (url)  {
